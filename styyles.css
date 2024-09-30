@@ -1,5 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Fredoka", sans-serif;
+}
+:root {
+  --color-blanco: white;
+}
+/*
+layout
+*/
+
+body {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 56px 1fr;
+  grid-template-areas:
+    "header  header"
+    "sidebar contenedor";
+  height: 100vh;
+}
+.header {
+  grid-area: header;
+  grid-area: sidebar;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: aqua;
+  height: 50px;
+  width: 100%;
+}
+.logo {
+  display: flex;
+  gap: 6px;
+  justify-items: center;
+}
+.logo h1 {
+  font-size: 35px;
+  color: var(--color-blanco);
+}
+.logo_contenedor {
+  display: flex;
+  align-items: center;
+}
+.contenedor {
+  grid-area: contenedor;
 }
