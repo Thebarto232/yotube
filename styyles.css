@@ -139,3 +139,47 @@ img {
 .profile-box img {
   border-radius: 50%;
 }
+.sidebar {
+  grid-area: sidebar;
+  background-color: var(--color-negro);
+  padding: 12.5px;
+}
+.sidebar-items {
+  display: flex;
+  flex-direction: column;
+  padding: 0 14px;
+}
+.sidebar-item {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  gap: 10px;
+
+  transition: 0.8s;
+  border-radius: 10px;
+}
+.sidebar-item:hover {
+  background-color: gray;
+}
+.sidebar-items i {
+  margin-right: 24px;
+  /* margin-left: 24px; */
+}
+hr {
+  border: solid 1px rgb(50, 48, 48);
+  margin: 12px 0;
+}
+i {
+  font-size: 1.5rem;
+}
+p,
+a {
+  font-size: 0.9rem;
+}
+h4 {
+  color: #525252;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 17px;
+}
