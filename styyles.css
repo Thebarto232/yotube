@@ -24,6 +24,17 @@ body {
     "sidebar contenedor";
   height: 100vh;
 }
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 5px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #717171;
+}
+
 .header {
   grid-area: header;
   /* grid-area: sidebar; */
@@ -143,6 +154,7 @@ img {
   grid-area: sidebar;
   background-color: var(--color-negro);
   padding: 12.5px;
+  overflow-y: scroll;
 }
 .sidebar-items {
   display: flex;
@@ -155,10 +167,10 @@ img {
   align-items: center;
   padding-left: 10px;
   gap: 10px;
-
   transition: 0.8s;
   border-radius: 10px;
 }
+
 .sidebar-item:hover {
   background-color: gray;
 }
