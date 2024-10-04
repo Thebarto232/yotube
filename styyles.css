@@ -126,6 +126,7 @@ img {
 }
 .contenedor {
   grid-area: contenedor;
+  /* overflow: hidden; */
 }
 .profile-contenedor {
   display: flex;
@@ -194,4 +195,35 @@ h4 {
   font-weight: bold;
   text-transform: uppercase;
   margin-left: 17px;
+}
+.chips_warpper {
+  display: flex;
+  overflow-x: scroll;
+  background-color: #181818;
+  padding-left: 14px;
+  border-top: 1px solid rgb(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+  max-width: calc(100vw - 240px);
+}
+.chips_warpper::-webkit-scrollbar {
+  height: 7px;
+}
+
+.chips_warpper:hover::-webkit-scrollbar-thumb {
+  background-color: #717171;
+}
+.ship {
+  margin: 12px 6px;
+  background-color: #373737;
+  padding: 6px 12px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 16px;
+  white-space: nowrap;
+  transition: 0.5s;
+}
+
+.ship:hover {
+  background-color: #d4d4d4;
+  border-radius: 16px;
 }
