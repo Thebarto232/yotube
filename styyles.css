@@ -236,7 +236,7 @@ h4 {
   height: calc(100vh -118px);
   padding: 20px;
   gap: 18px;
-  overflow-y: auto;
+  overflow-y: scroll;
   background-color: #313131;
 }
 
