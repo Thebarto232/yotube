@@ -46,8 +46,9 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 16px;
+  padding-left: 16px;
+  gap: 6px;
 }
 a {
   text-decoration: none;
@@ -154,8 +155,8 @@ img {
 .sidebar {
   grid-area: sidebar;
   background-color: var(--color-negro);
-  padding: 12.5px;
-  overflow-y: scroll;
+  padding-top: 10px;
+  overflow-y: auto;
 }
 .sidebar-items {
   display: flex;
@@ -294,4 +295,27 @@ h4 {
   font-size: 0.8rem;
   margin-top: 4px;
   color: #aaa;
+}
+@media (max-width: 1200px) {
+  body {
+    grid-template-columns: 70px 1fr;
+  }
+  .sidebar-item span,
+  .sidebar-item h4 {
+    display: none;
+  }
+  .sidebar-item {
+    padding: 0 auto;
+  }
+  .sidebar-item {
+    padding: 0 20px 0 20;
+  }
+  .chips_warpper {
+    max-width: calc(800vw -70px);
+  }
+  @media (max-width: 800px) {
+    .serch-content {
+      display: none;
+    }
+  }
 }
