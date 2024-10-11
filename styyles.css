@@ -55,31 +55,31 @@ a {
   font-size: 0.9rem;
   color: var(--color-blanco);
 }
-h1 {
+.header__title{
   font-size: 1.5 1fr;
 }
-.logo {
+.header__logo {
   display: flex;
   gap: 4px;
   /* justify-items: center; */
 }
 
-.logo h1 {
+.header__logo .header__title {
   color: var(--color-blanco);
   letter-spacing: -1px;
 }
-.serch-content {
+.header__search-container {
   display: flex;
   align-items: center;
   gap: 6px;
   flex: 0 1 685px;
 }
-.serch-content form {
+.header__search-container form {
   position: relative;
   width: 100%;
   display: flex;
 }
-.serch-content input {
+.header__search-container input {
   height: 40px;
   background-color: rgb(13, 13, 13);
   color: white;
@@ -89,7 +89,7 @@ h1 {
   border-radius: 10px 0 0 10px;
   width: 100%;
 }
-.serch-content button {
+.header__search-container button {
   width: 40px;
   height: 40px;
   background-color: #313131;
@@ -101,7 +101,7 @@ h1 {
   cursor: pointer;
 }
 /* buscar espesificamente el icono que quiero personaliza ~ */
-.serch-content form ~ button {
+.header__search-container form ~ button {
   color: rgb(140, 183, 224);
   border-radius: 50%;
   min-width: 40px;
@@ -115,12 +115,12 @@ img {
   height: 100%;
   object-fit: contain;
 }
-.logo-img {
+.header__logo-image {
   position: relative;
   height: 25px;
   width: 30px;
 }
-.logo_contenedor {
+.header__logo-contenedor {
   display: flex;
   align-items: center;
   gap: 6px;
@@ -187,11 +187,11 @@ hr {
 i {
   font-size: 1.5rem;
 }
-p,
+.ship__items,
 a {
   font-size: 0.9rem;
 }
-h4 {
+.sidebar__title{
   color: #525252;
   font-weight: bold;
   text-transform: uppercase;
@@ -296,6 +296,9 @@ h4 {
   margin-top: 4px;
   color: #aaa;
 }
+
+
+/* media quiery*/
 @media (max-width: 1200px) {
   body {
     grid-template-columns: 70px 1fr;
@@ -314,7 +317,7 @@ h4 {
     max-width: calc(800vw -70px);
   }
   @media (max-width: 800px) {
-    .serch-content {
+    .header__search-container {
       display: none;
     }
   }
